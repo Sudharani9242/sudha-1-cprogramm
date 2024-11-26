@@ -1,0 +1,11 @@
+include <stdio.h>
+ int main() { 
+ for (int i=1; I<=10; I++) {
+   if(I==5) 
+   {
+     break;
+   }
+   printf(%d\n", I) ;
+   }
+   
+ 
