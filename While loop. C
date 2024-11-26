@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+int = 1; while(I<=5) {
+  print ("%d/n,,i")
+    I++;
+} 
+  return 0;
+}
