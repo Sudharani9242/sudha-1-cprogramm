@@ -1,0 +1,11 @@
+
+#include<stdii.h>
+int main() { 
+int num;
+printf("enter a number to generate itd multiplication table:") 
+scanf("©d", $num);
+for (int I= 1;i<=10;i++) { 
+printf("%d x%d=%d\n", num, I, num*i) ;
+} 
+return 0;
+}
