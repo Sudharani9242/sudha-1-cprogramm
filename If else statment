@@ -1,0 +1,38 @@
+
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    
+    // Asking the user to input a number
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    // Using if-else statement to check the condition
+    if (num > 0) {
+        printf("The number is positive.\n");
+    }
+    else if (num < 0) {
+        printf("The number is negative.\n");
+    }
+    else {
+        printf("The number is zero.\n");
+    }
+
+    return 0; 
+
+
+
+
+ Output:
+
+Enter a number: 5
+The number is positive.
+
+Enter a number: -3
+The number is negative.
+
+Enter a number: 0
+The number is zero.
+
