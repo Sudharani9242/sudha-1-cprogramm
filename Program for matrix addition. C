@@ -1,0 +1,72 @@
+
+
+#include <stdio.h>
+
+int main() {
+    int matrix1[ROWS][COLS], matrix2[ROWS][COLS], result[ROWS][COLS];
+    int i, j;
+
+    
+    printf("Enter elements of the first %dx%d matrix:\n", ROWS, COLS);
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            printf("matrix1[%d][%d]: ", i, j);
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+
+
+    printf("\nEnter elements of the second %dx%d matrix:\n", ROWS, COLS);
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            printf("matrix2[%d][%d]: ", i, j);
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+
+    // Perform matrix addition
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            result[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+
+  
+    printf("\nResultant matrix after addition:\n");
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            printf("%d ", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return
+
+ Output:
+
+Enter elements of the first 3x3 matrix:
+matrix1[0][0]: 1
+matrix1[0][1]: 2
+matrix1[0][2]: 3
+matrix1[1][0]: 4
+matrix1[1][1]: 5
+matrix1[1][2]: 6
+matrix1[2][0]: 7
+matrix1[2][1]: 8
+matrix1[2][2]: 9
+
+Enter elements of the second 3x3 matrix:
+matrix2[0][0]: 9
+matrix2[0][1]: 8
+matrix2[0][2]: 7
+matrix2[1][0]: 6
+matrix2[1][1]: 5
+matrix2[1][2]: 4
+matrix2[2][0]: 3
+matrix2[2][1]: 2
+matrix2[2][2]: 1
+
+Resultant matrix after addition:
+10 10 10
+10 10 10
+
