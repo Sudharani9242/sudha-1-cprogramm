@@ -1,0 +1,63 @@
+
+
+#include <stdio.h>
+
+#define ROWS 3 // Number of rows
+#define COLS 3 // Number of columns
+
+void inputMatrix(int matrix[ROWS][COLS], int rows, int cols) {
+    printf("Enter the elements of the matrix (%dx%d):\n", rows, cols);
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
+
+void printMatrix(int matrix[ROWS][COLS], int rows, int cols) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void addMatrices(int mat1[ROWS][COLS], int mat2[ROWS][COLS], int result[ROWS][COLS], int rows, int cols) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+}
+
+int main() {
+    int mat1[ROWS][COLS], mat2[ROWS][COLS], result[ROWS][COLS];
+
+    printf("Matrix 1:\n");
+    inputMatrix(mat1, ROWS, COLS);
+
+    printf("\nMatrix 2:\n");
+    inputMatrix(mat2, ROWS, COLS);
+
+    addMatrices(mat1, mat2, result, ROWS, COLS);
+
+    printf("\nResultant Matrix after Addition:\n");
+    printMatrix(result, ROWx
+
+Input: Matrix 1:
+1 2 3
+4 5 6
+7 8 9
+
+Matrix 2:
+9 8 7
+6 5 4
+3 2 1
+
+Output
+10 10 10
+10 10 10
+10 10 10
+
