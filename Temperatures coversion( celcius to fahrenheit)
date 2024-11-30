@@ -1,0 +1,32 @@
+
+
+#include <stdio.h>
+
+void celsiusToFahrenheit() {
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("Temperature in Fahrenheit: %.2f°F\n", fahrenheit);
+}
+
+int main() {
+    printf("Celsius to Fahrenheit Conversion\n");
+    celsiusToFahrenheit();
+    return 0;
+}
+Celsius to Fahrenheit Conversion
+
+Enter temperature in Celsius: 25
+
+Temperature in Fahrenheit: 77.00°F
+
+
+
+
+
+=== Code Execution Successful ===
+
