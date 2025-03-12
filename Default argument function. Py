@@ -1,0 +1,5 @@
+def greet(name="Guest", age=25):
+    print(f"Hello {name}, you are {age} years old.")
+greet() 
+greet("sudha")  
+greet("Bob", 30)
