@@ -1,0 +1,10 @@
+
+name = "ram"
+age = 20
+formatted_string = f"My name is {name} and I am {age} years old."
+print(formatted_string)
+
+Output:
+
+my name is ram and my age is 20
+
