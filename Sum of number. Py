@@ -1,0 +1,13 @@
+def sum_of_numbers(*args):
+    return sum(args)
+result = sum_of_numbers(1, 2, 3, 4, 5)
+print("Sum of numbers:", result)
+
+result2 = sum_of_numbers(10, 20, 30)
+print("Sum of numbers:", result2)
+
+result3 = sum_of_numbers(5)
+print("Sum of numbers:", result3)
+
+result4 = sum_of_numbers()
+print("Sum of numbers:", result4)
