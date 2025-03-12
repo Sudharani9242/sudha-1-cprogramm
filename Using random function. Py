@@ -1,0 +1,19 @@
+import random
+
+def random_integer(start, end):
+    return random.randint(start, end)
+def random_float(start, end):
+    return random.uniform(start, end)
+def random_choice(items):
+    return random.choice(items)
+def shuffle_list(items):
+    random.shuffle(items)
+    return items
+def main():
+    print("Random Integer between 1 and 100:", random_integer(1, 100))
+    print("Random Float between 1 and 10:", random_float(1, 10))
+    my_list = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+    print("Random item from the list:", random_choice(my_list))
+    shuffled_list = shuffle_list(my_list[:])  
+    print("Shuffled list:", shuffled_list)
+main()
