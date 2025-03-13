@@ -1,0 +1,12 @@
+sudha=["afreen","nisha","harshi","dhanu"]
+sudha[0]="afreen"
+sudha.append("huli")
+sudha.insert(-1,"sudha")
+print(sudha)
+sudha.remove("dhanu")
+print(sudha)
+sudha.pop()
+sudha.pop()
+print(sudha)
+sudha.clear()
+print(sudha)
